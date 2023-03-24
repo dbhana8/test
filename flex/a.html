@@ -47,7 +47,15 @@
         }
 
         .flex-start{
-            flex-direction: flex-start;
+            justify-content: flex-start;
+        }
+
+        .flex-end{
+            justify-content: flex-end;
+        }
+
+        .center{
+            justify-content: flex-start;
         }
 
         .flex-container > div{
@@ -88,21 +96,35 @@
         <div>4</div>
     </div>
     <h2>flex-wrap</h2>
-    <h3>flex-direction: no-wrap;</h3>
+    <h3>flex-wrap: no-wrap;</h3>
     <div class="flex-container no-wrap">
         <div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div>
     </div>
-    <h3>flex-direction: wrap;</h3>
+    <h3>flex-wrap: wrap;</h3>
     <div class="flex-container wrap">
         <div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div>
     </div>
-    <h3>flex-direction: wrap-reverse;</h3>
+    <h3>flex-wrap: wrap-reverse;</h3>
     <div class="flex-container wrap-reverse">
         <div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div>
     </div>
     <h2>justify-content</h2>
-    <h3>flex-direction: flex-start;</h3>
+    <h3>justify-content: flex-start;</h3>
     <div class="flex-container flex-start">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <h3>justify-content: flex-end;</h3>
+    <div class="flex-container flex-end">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <h3>justify-content: flex-center;</h3>
+    <div class="flex-container flex-center">
         <div>1</div>
         <div>2</div>
         <div>3</div>
