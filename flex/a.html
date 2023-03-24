@@ -10,19 +10,34 @@
         .flex-container{
             display: flex;
             background-color: ivory;
-            flex-direction: row-reverse;
             padding: 1ch;
         }
+
+        .row{
+            flex-direction: row;
+        }
+
+        .row-reverse{
+            flex-direction: row-reverse;
+        }
+
         .flex-container > div{
             width: 10ch;
             height: 10ch;
             background-color: antiquewhite;
-            border: 1px solid blue;
+            border: 1px solid lightblue;
         }
     </style>
 </head>
 <body>
-    <div class="flex-container">
+    <h3>flex-direction: row;</h3>
+    <div class="flex-container row">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <h3>flex-direction: row-revese;</h3>
+    <div class="flex-container row-reverse">
         <div>1</div>
         <div>2</div>
         <div>3</div>
